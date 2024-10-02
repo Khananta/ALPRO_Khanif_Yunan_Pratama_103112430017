@@ -11,6 +11,6 @@ func main() {
 	fmt.Print("Masukan bilangan x: ")
 	fmt.Scan(&x)
 
-	var opearasi float32 = (2/(x+5) + 5)
+	var opearasi float32 = (2/(x+5) + 5) //Rumus dari FX
 	fmt.Println("Hasil dari:", x, "adalah", opearasi)
 }
