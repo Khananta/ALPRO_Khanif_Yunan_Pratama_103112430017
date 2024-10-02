@@ -14,7 +14,7 @@ func main() {
 	fmt.Scanln(&suhuFahrenheit)
 
 	//Operasi untuk mengkonfersi dari fahrenheit ke suhu kelvin
-	suhuKelvin = (suhuFahrenheit-32)*5/9 + 273.15
+	suhuKelvin = (suhuFahrenheit-32)*5/9 + 273
 	fmt.Println("Suhu Kelvin nya adalah: ", suhuKelvin, "Kelvin")
 
 }
