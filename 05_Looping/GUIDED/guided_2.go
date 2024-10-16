@@ -10,9 +10,11 @@ func main() {
 		inisiasi, alas, tinggi, luas int
 	)
 
+	// Inputan untuk mendeklarasikan berapa kalii perulangan akan berlanjut.
 	fmt.Print("Massukan inisiasi: ")
 	fmt.Scan(&inisiasi)
 
+	// Perulangan untuk mengulangi operasi mencari luas
 	for i := 1; i <= inisiasi; i++ {
 		fmt.Println("Masukan alas: ")
 		fmt.Scan(&alas)
