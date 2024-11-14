@@ -14,12 +14,15 @@ import "fmt"
 
 func main() {
 
+	// Membuat variable
 	var nam float32
 	var nmk string
 
+	// Membuat sebuah inputan untuk memasukan nilai mata kuliah
 	fmt.Print("Nilai akhir mata kuliah: ")
 	fmt.Scan(&nam)
 
+	// Percabangan untuk menentukan nilai masuk ke kategori mana
 	if nam > 80 {
 		nmk = "A"
 	} else if nam > 72.5 && nam <= 80 {
@@ -36,6 +39,7 @@ func main() {
 		nmk = "E"
 	}
 
+	// Menampilkan kategori nilai
 	fmt.Println("Nilai akhir mata kuliah: ", nmk)
 
 }
