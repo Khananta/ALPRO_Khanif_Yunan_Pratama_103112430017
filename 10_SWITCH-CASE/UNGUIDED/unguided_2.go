@@ -6,8 +6,8 @@ func main() {
 
 	// Membuat variable
 	var (
-		kendaraan string
-		durasi    int
+		kendaraan     string
+		durasi, biaya int
 	)
 
 	// Meminta untuk memasukan jenis kendaraan dan durasi
@@ -20,34 +20,18 @@ func main() {
 	// Switch case untuk menentukan tarif sesuai dengan jenis kendaraan dan durasi
 	switch kendaraan {
 	case "Motor", "motor", "MOTOR":
-		switch {
-		case durasi < 1:
-			durasi = 1
-			fmt.Print("Rp ", durasi*2000)
-		default:
-			durasi = durasi * 2000
-			fmt.Print("Rp ", durasi)
-		}
+		biaya = 2000
 	case "Mobil", "mobil", "MOBIL":
-		switch {
-		case durasi < 1:
-			durasi = 1
-			fmt.Print("Rp ", durasi*5000)
-		default:
-			durasi = durasi * 5000
-			fmt.Print("Rp ", durasi)
-		}
+		biaya = 5000
 	case "Truk", "truk", "TRUK":
-		switch {
-		case durasi < 1:
-			durasi = 1
-			fmt.Print("Rp ", durasi*8000)
-		default:
-			durasi = durasi * 8000
-			fmt.Print("Rp ", durasi)
-		}
+		biaya = 8000
 	default:
-		fmt.Println("Jenis kendaraan atau durasi parkir tidak valid")
+		fmt.Println("Jenis kendaraan tidak valid")
 	}
+
+	biaya = durasi * biaya
+
+	// Menampilkan hasil biaya parkir yang harus dikeluarkan setiap kendaraan
+	fmt.Println("Rp", biaya)
 
 }
