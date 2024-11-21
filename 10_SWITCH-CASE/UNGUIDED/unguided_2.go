@@ -17,7 +17,7 @@ func main() {
 	fmt.Print("Masukkan durasi parkir (dalam jam): ")
 	fmt.Scan(&durasi)
 
-	// Switch case untuk menentukan tarif sesuai dengan jenis kendaraan dan durasi
+	// Switch case untuk menentukan tarif sesuai dengan jenis kendaraan
 	switch kendaraan {
 	case "Motor", "motor", "MOTOR":
 		biaya = 2000
