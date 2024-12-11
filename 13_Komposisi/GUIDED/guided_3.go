@@ -11,9 +11,9 @@ func main() {
 
 	// Perulangan untuk menampilkan angka dari 1 hingga angka yang dimasukan
 	for i := 1; i <= angka; i++ {
-		// Percabangan untuk memeriksa apakah angka tersebut ganjil
-		if i%2 != 0 {
-			fmt.Println(i)
+		// Percabangan untuk menentukan mana saja faktor dari bilangan tersebut
+		if angka%i == 0 {
+			fmt.Print(i, " ")
 		}
 	}
 
