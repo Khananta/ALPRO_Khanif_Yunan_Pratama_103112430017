@@ -1,8 +1,0 @@
-Switch-case hampir sama dengan if-else. Perbedaannya adalah if-else akan memeriksa setiap kondisi secara berurutan hingga menemukan kondisi yang terpenuhi, sedangkan switch-case dirancang untuk mencocokkan nilai dari suatu ekspresi dengan nilai-nilai tertentu di setiap case. Switch-case cenderung lebih bersih dan mudah dibaca saat digunakan untuk membandingkan banyak nilai. Namun, dalam Go, switch juga dapat digunakan untuk memeriksa kondisi logis tanpa memerlukan ekspresi tertentu, mirip dengan if-else.
-
-Komponen penulisan switch-case yaitu:
-1. Ekspresi, yaitu operasi pada sebuah tipe data selain boolean
-2. Nilai, yaitu pilihan dalam sebuah case yang akan dibandingkan dengan hasil ekspresi pada switch
-3. Aksi, yaitu perintah yang akan dijalankan ketika ekspresi sesuai dengan salah satu case.
-
-Kemudian pada switch-case terdapat kata kunci default, yaitu akan berjalan ketika tidak ada kondisi case yang cocok. Secara otomatis default akan berjalan sesuai dengan perintah yang ada.
