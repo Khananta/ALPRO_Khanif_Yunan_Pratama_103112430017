@@ -1,0 +1,12 @@
+program StabilitasAngka
+variabel
+    angka1, angka2, angka3, angka4, angka5: real
+algoritma
+    input(angka1, angka2, angka3, angka4, angka5)
+    if (angka1 > angka2 and angka2 > angka3 and angka3 > angka4 and angka4 > angka5) or 
+       (angka1 < angka2 and angka2 < angka3 and angka3 < angka4 and angka4 < angka5) then
+        output("Stabil naik/turun")
+    else
+        output("Tidak stabil")
+    end if
+end program

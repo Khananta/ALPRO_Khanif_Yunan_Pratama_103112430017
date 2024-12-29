@@ -1,0 +1,21 @@
+program CekBilanganPrima
+variabel
+    angka: integer
+    kebenaran: boolean
+
+algoritma
+    input(angka)
+
+    if angka <= 1 then
+        kebenaran = false
+    else
+        for i = 2 to angka-1 do
+            if angka mod i == 0 then
+                kebenaran = false
+                break
+            end if
+        end for
+    end if
+
+    output(kebenaran)
+end program

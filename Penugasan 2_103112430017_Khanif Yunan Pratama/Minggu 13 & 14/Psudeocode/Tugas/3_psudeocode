@@ -1,0 +1,19 @@
+program CariLebarTerbesar
+variabel
+    jumlahDaun: integer
+    lebar: integer
+    lebarTerbesar: integer
+
+algoritma
+    input(jumlahDaun)
+    lebarTerbesar = 0
+
+    for i = 1 to jumlahDaun do
+        input(lebar)
+        if lebar > lebarTerbesar then
+            lebarTerbesar = lebar
+        end if
+    end for
+
+    output(lebarTerbesar)
+end program
